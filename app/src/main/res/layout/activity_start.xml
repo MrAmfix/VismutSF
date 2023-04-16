@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backbanner"
+    android:orientation="vertical"
+    tools:context=".StartActivity">
+
+
+    <ImageView
+        android:id="@+id/vismut"
+        android:layout_width="318sp"
+        android:layout_height="130sp"
+        android:rotation="2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50sp"
+        android:background="#00000000"
+        android:src="@drawable/vismut">
+    </ImageView>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="   Перевод чисел   "
+        android:id="@+id/button_transfer"
+        android:layout_below="@+id/vismut"
+        android:gravity="center"
+        android:layout_marginTop="130dp"
+        android:textColor="#05084d"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/design_button_v1">
+    </Button>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="   Мат. операции   "
+        android:id="@+id/button_math"
+        android:layout_below="@+id/button_transfer"
+        android:gravity="center"
+        android:textColor="#05084d"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/design_button_v1"
+        android:layout_marginTop="20sp">
+    </Button>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="   О разбаботчике   "
+        android:id="@+id/button_info_developer"
+        android:background="@drawable/design_button_v1"
+        android:textColor="#05084d"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginVertical="15sp"
+        android:layout_marginRight="15sp">
+    </Button>
+
+</RelativeLayout>

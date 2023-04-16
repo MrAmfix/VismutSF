@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/backbanner"
+    tools:context=".InstructionActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="40sp"
+        android:textColor="#23152d"
+        android:id="@+id/titleinstruction"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        android:text="Как пользоваться приложением?">
+    </TextView>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_below="@+id/titleinstruction"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textscroller"
+        android:layout_marginTop="50dp"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:textColor="#05084d"
+        android:text="Default"
+        android:textStyle="bold">
+    </TextView>
+    </ScrollView>
+
+
+
+</RelativeLayout>
