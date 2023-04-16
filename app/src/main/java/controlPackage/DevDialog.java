@@ -32,7 +32,7 @@ public class DevDialog extends DialogFragment {
         builder.setNegativeButton(button2String, new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int id) {
                 Intent i = new Intent(Intent.ACTION_VIEW);
-                i.setData(Uri.parse("https://github.com/MrAmfix/VismutProject"));
+                i.setData(Uri.parse("https://github.com/MrAmfix/VismutSF"));
                 startActivity(i);
             }
         });
