@@ -49,6 +49,20 @@
         android:background="@drawable/design_button_v1"
         android:layout_marginTop="20sp">
     </Button>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="       Настройки       "
+        android:id="@+id/button_settings"
+        android:layout_below="@+id/button_math"
+        android:gravity="center"
+        android:textColor="#05084d"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/design_button_v1"
+        android:layout_marginTop="20sp">
+    </Button>
 
     <Button
         android:layout_width="wrap_content"

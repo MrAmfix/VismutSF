@@ -1,5 +1,10 @@
 package controlPackage;
 
+import android.widget.CheckBox;
+
+import com.example.vismutsf.MathActivity;
+import com.example.vismutsf.SettingsActivity;
+
 import java.math.BigInteger;
 
 import executeClass.fromDecimalNumber;
@@ -63,6 +68,9 @@ public class HMeth {
         return false;
     }
     public static boolean isCanPow(String num, BigInteger degree){
+        if(SettingsActivity.settings.getBoolean("EX_MODE", false)){
+            return true;
+        }
         if(num.length() >= 40 && degree.compareTo(new BigInteger("9")) == 1){
             return false;
         }

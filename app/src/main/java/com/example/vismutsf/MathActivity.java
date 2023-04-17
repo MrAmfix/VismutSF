@@ -2,12 +2,13 @@ package com.example.vismutsf;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
-import android.widget.EditText;
+import android.widget.CheckBox;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -24,6 +25,7 @@ public class MathActivity extends AppCompatActivity {
             ,"24  ","25  ","26  ","27  ","28  ","29  ","30  ","31  ","32  ","33  ","34  ","35  ","36  "};
     public int SelectedNumber = 1;
     TextView result;
+    SharedPreferences sets;
     Spinner fromsys, tosys;
     TextView numMain1, numMain2;
     Button add, subtract, multiply, divide, info, selecter1, selecter2;

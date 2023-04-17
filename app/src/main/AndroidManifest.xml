@@ -10,25 +10,32 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
         <activity
-            android:name=".InstructionActivity"
+            android:name=".SettingsActivity"
             android:screenOrientation="portrait"
-            android:exported="false" />
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".InstructionActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".MathActivity"
-            android:screenOrientation="portrait"
-            android:exported="false">
-        </activity>
+            android:exported="false"
+            android:screenOrientation="portrait"></activity>
         <activity
             android:name=".TransferActivity"
-            android:screenOrientation="portrait"
-            android:exported="false">
-        </activity>
+            android:exported="false"
+            android:screenOrientation="portrait"></activity>
         <activity
             android:name=".StartActivity"
-            android:screenOrientation="portrait"
-            android:exported="true">
+            android:exported="true"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

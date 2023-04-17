@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backbanner"
+    android:orientation="vertical"
+    tools:context=".SettingsActivity">
+
+    <TextView
+        android:layout_marginTop="80sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#05084d"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:id="@+id/settingstext"
+        android:gravity="center"
+        android:text="Настройки">
+    </TextView>
+    <CheckBox
+        android:layout_below="@+id/settingstext"
+        android:layout_marginTop="100sp"
+        android:layout_width="match_parent"
+        android:textColor="#05084d"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"
+        android:text="  Экспериментальный режим"
+        android:id="@+id/exmode"
+        android:gravity="center">
+    </CheckBox>
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/exmode"
+        android:gravity="center"
+        android:textColor="#05084d"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:text="  Приблизительный вывод"
+        android:id="@+id/specialoutput"
+        android:layout_marginTop="10sp">
+    </CheckBox>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/forline"
+        android:layout_marginTop="15sp"
+        android:layout_below="@+id/specialoutput">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#05084d"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:id="@+id/infoextext"
+            android:gravity="center"
+            android:text="  Количество знаков после запятой:  "
+            android:layout_marginLeft="30sp">
+        </TextView>
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/countsignex"
+            android:layout_marginLeft="15sp">
+        </Spinner>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_below="@+id/forline"
+        android:layout_marginTop="50sp">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/design_button_v1"
+            android:textColor="#05084d"
+            android:textSize="15sp"
+            android:id="@+id/savebutton"
+            android:textStyle="bold"
+            android:text="   Сохранить   ">
+        </Button>
+    </LinearLayout>
+
+
+
+
+
+</RelativeLayout>
