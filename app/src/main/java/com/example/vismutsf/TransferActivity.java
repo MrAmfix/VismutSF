@@ -14,6 +14,7 @@ import android.widget.Toast;
 import java.math.BigInteger;
 
 import controlPackage.ControlTransfer;
+import controlPackage.Formater;
 import executeClass.fromDecimalNumber;
 
 public class TransferActivity extends AppCompatActivity {
@@ -82,20 +83,7 @@ public class TransferActivity extends AppCompatActivity {
                         Result.setText("");
                     }
                     else{
-                        String result = "";
-                        if(!in.getSign()){
-                            result += "- ";
-                        }
-                        if(in.getOriginalNumerator().equals(BigInteger.ZERO)){
-                            result += "0";
-                        }
-                        else{
-                            result += in.getInteger();
-                        }
-                        if(!(in.getOriginalDenominator().equals(BigInteger.ONE))){
-                            result += (" " + in.getFloat() + " / " + in.getDenominator());
-                        }
-                        Result.setText(result);
+                        Result.setText(Formater.getFormatText(in));
                     }
                 }
             }

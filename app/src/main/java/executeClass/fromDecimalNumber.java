@@ -1,6 +1,8 @@
 package executeClass;
 
+import java.math.BigDecimal;
 import java.math.BigInteger;
+import java.math.RoundingMode;
 
 public class fromDecimalNumber {
     protected boolean sign; // true + / false -
@@ -79,6 +81,10 @@ public class fromDecimalNumber {
     public String getFloat(){
         fromDecimalNumber fdn = new fromDecimalNumber(this.numSys, this.originalNumerator.mod(this.originalDenominator), BigInteger.ONE);
         return fdn.getNumerator();
+    }
+    public BigDecimal getFloatEX(){
+        BigDecimal fm = new BigDecimal(this.originalNumerator.mod(this.originalDenominator)).divide(new BigDecimal(this.originalDenominator), 20, BigDecimal.ROUND_HALF_UP);
+        return fm;
     }
     //getInteger, getFloat
 }

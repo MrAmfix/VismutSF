@@ -16,6 +16,7 @@ import android.widget.Toast;
 import java.math.BigInteger;
 
 import controlPackage.ControlMath;
+import controlPackage.Formater;
 import executeClass.fromDecimalNumber;
 
 public class MathActivity extends AppCompatActivity {
@@ -106,20 +107,7 @@ public class MathActivity extends AppCompatActivity {
                         result.setText("");
                     }
                     else{
-                        String Result = "";
-                        if(!content.getSign()){
-                            Result += "- ";
-                        }
-                        if(content.getOriginalNumerator().equals(BigInteger.ZERO)){
-                            Result += "0";
-                        }
-                        else{
-                            Result += content.getInteger();
-                        }
-                        if(!(content.getOriginalDenominator().equals(BigInteger.ONE))){
-                            Result += (" " + content.getFloat() + " / " + content.getDenominator());
-                        }
-                        result.setText(Result);
+                        result.setText(Formater.getFormatText(content));
                     }
                 }
             }
@@ -142,20 +130,7 @@ public class MathActivity extends AppCompatActivity {
                         result.setText("");
                     }
                     else{
-                        String Result = "";
-                        if(!content.getSign()){
-                            Result += "- ";
-                        }
-                        if(content.getOriginalNumerator().equals(BigInteger.ZERO)){
-                            Result += "0";
-                        }
-                        else{
-                            Result += content.getInteger();
-                        }
-                        if(!(content.getOriginalDenominator().equals(BigInteger.ONE))){
-                            Result += (" " + content.getFloat() + " / " + content.getDenominator());
-                        }
-                        result.setText(Result);
+                        result.setText(Formater.getFormatText(content));
                     }
                 }
             }
@@ -178,20 +153,7 @@ public class MathActivity extends AppCompatActivity {
                         result.setText("");
                     }
                     else{
-                        String Result = "";
-                        if(!content.getSign()){
-                            Result += "- ";
-                        }
-                        if(content.getOriginalNumerator().equals(BigInteger.ZERO)){
-                            Result += "0";
-                        }
-                        else{
-                            Result += content.getInteger();
-                        }
-                        if(!(content.getOriginalDenominator().equals(BigInteger.ONE))){
-                            Result += (" " + content.getFloat() + " / " + content.getDenominator());
-                        }
-                        result.setText(Result);
+                        result.setText(Formater.getFormatText(content));
                     }
                 }
             }
@@ -214,20 +176,7 @@ public class MathActivity extends AppCompatActivity {
                         result.setText("");
                     }
                     else{
-                        String Result = "";
-                        if(!content.getSign()){
-                            Result += "- ";
-                        }
-                        if(content.getOriginalNumerator().equals(BigInteger.ZERO)){
-                            Result += "0";
-                        }
-                        else{
-                            Result += content.getInteger();
-                        }
-                        if(!(content.getOriginalDenominator().equals(BigInteger.ONE))){
-                            Result += (" " + content.getFloat() + " / " + content.getDenominator());
-                        }
-                        result.setText(Result);
+                        result.setText(Formater.getFormatText(content));
                     }
                 }
             }
@@ -250,20 +199,7 @@ public class MathActivity extends AppCompatActivity {
                         result.setText("");
                     }
                     else{
-                        String Result = "";
-                        if(!content.getSign()){
-                            Result += "- ";
-                        }
-                        if(content.getOriginalNumerator().equals(BigInteger.ZERO)){
-                            Result += "0";
-                        }
-                        else{
-                            Result += content.getInteger();
-                        }
-                        if(!(content.getOriginalDenominator().equals(BigInteger.ONE))){
-                            Result += (" " + content.getFloat() + " / " + content.getDenominator());
-                        }
-                        result.setText(Result);
+                        result.setText(Formater.getFormatText(content));
                     }
                 }
             }

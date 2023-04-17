@@ -54,4 +54,7 @@ public class SettingsActivity extends AppCompatActivity {
             }
         });
     }
+    public static boolean getOutPut(){
+        return settings.getBoolean("EX_OUTPUT", false);
+    }
 }
