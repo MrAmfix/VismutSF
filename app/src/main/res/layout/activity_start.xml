@@ -67,7 +67,7 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="   О разбаботчике   "
+        android:text="   О разработчике   "
         android:id="@+id/button_info_developer"
         android:background="@drawable/design_button_v1"
         android:textColor="#05084d"
