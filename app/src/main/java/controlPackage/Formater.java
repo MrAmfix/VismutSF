@@ -3,6 +3,7 @@ package controlPackage;
 import android.widget.Toast;
 
 import com.example.vismutsf.SettingsActivity;
+import com.example.vismutsf.StartActivity;
 import com.example.vismutsf.TransferActivity;
 
 import java.math.BigDecimal;
@@ -20,7 +21,7 @@ public class Formater {
             a = false;
         }
         if(a){
-            int sign = SettingsActivity.settings.getInt("EX_COUNT", 1);
+            int sign = StartActivity.valueSettings.getInt("EX_COUNT", 1);
             String Result = "";
             if(!content.getSign()){
                 Result += "- ";

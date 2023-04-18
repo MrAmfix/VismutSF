@@ -19,7 +19,7 @@ public class SettingsActivity extends AppCompatActivity {
     public String[] Signex = {"1   ", "2   ", "3   ", "4   ","5   ","6   ","7   ","8   ","9   ","10  "};
     CheckBox exMode, exOutPut;
     Spinner countSign;
-    public static SharedPreferences settings;
+    //public static SharedPreferences settings;
     Button saveb;
     @Override
     protected void onPause() {
@@ -38,14 +38,14 @@ public class SettingsActivity extends AppCompatActivity {
         ArrayAdapter<String> AllowSignex = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, Signex);
         AllowSignex.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         countSign.setAdapter(AllowSignex);
-        settings = getSharedPreferences("SETTINGS_SAVE",MODE_PRIVATE);
-        exMode.setChecked(settings.getBoolean("EX_MODE", false));
-        exOutPut.setChecked(settings.getBoolean("EX_OUTPUT", false));
-        countSign.setSelection(settings.getInt("EX_COUNT", 1) - 1);
+        //settings = getSharedPreferences("SETTINGS_SAVE",MODE_PRIVATE);
+        exMode.setChecked(StartActivity.valueSettings.getBoolean("EX_MODE", false));
+        exOutPut.setChecked(StartActivity.valueSettings.getBoolean("EX_OUTPUT", false));
+        countSign.setSelection(StartActivity.valueSettings.getInt("EX_COUNT", 1) - 1);
         saveb.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                SharedPreferences.Editor editor = settings.edit();
+                SharedPreferences.Editor editor = StartActivity.valueSettings.edit();
                 editor.putBoolean("EX_MODE", exMode.isChecked());
                 editor.putBoolean("EX_OUTPUT", exOutPut.isChecked());
                 editor.putInt("EX_COUNT", Integer.parseInt(countSign.getSelectedItem().toString().trim()));
@@ -55,6 +55,6 @@ public class SettingsActivity extends AppCompatActivity {
         });
     }
     public static boolean getOutPut(){
-        return settings.getBoolean("EX_OUTPUT", false);
+        return StartActivity.valueSettings.getBoolean("EX_OUTPUT", false);
     }
 }
