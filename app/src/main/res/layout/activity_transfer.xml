@@ -29,6 +29,7 @@
         android:layout_height="80sp"
         android:id="@+id/scrollone">
     <TextView
+        android:textIsSelectable="true"
         android:id="@+id/textontop"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

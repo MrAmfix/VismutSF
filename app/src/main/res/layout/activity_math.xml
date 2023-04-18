@@ -33,6 +33,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/resultmath"
         android:textStyle="bold"
+        android:textIsSelectable="true"
         android:text="Здесь будет результат вычислений"
         android:gravity="center"
         android:layout_below="@+id/mathview"
